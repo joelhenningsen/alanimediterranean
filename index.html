@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alani Mediterranean</title>
+    <title>Alani Mediterranean Cuisine</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
 </head>
 <body>
+    <header>
+        <h1>Alani Mediterranean Cuisine</h2>
+    </header>
     <div class="container">
-        <h1>Coming Soon</h1>
+        <h2>Coming Soon</h1>
         <p>Our new website is currently under development. Stay tuned!</p>
         <div class="social-links">
             <!-- Add your social media links here -->
@@ -19,5 +26,12 @@
             <a href="https://www.grubhub.com/restaurant/alani-food-cart-1401--washington-st-oregon-city/2894662">Grubhub</a>
         </div>
     </div>
+    <footer>
+        © <span id="current-year"></span> Alani Mediterranean Cuisine
+    </footer>  
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+      
 </body>
 </html>
