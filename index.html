@@ -11,20 +11,36 @@
     <link rel="manifest" href="assets/site.webmanifest">
 </head>
 <body>
+    <nav style="position: fixed; top: 0; width: 100%; background-color: #333; color: white;">
+        <img src="path_to_your_logo.png" alt="Business Logo" style="height: 50px;">
+        <div style="float: right;">
+            <a href="order.html" style="color: white; padding: 14px 16px; text-decoration: none;">Order</a>
+            <a href="locations.html" style="color: white; padding: 14px 16px; text-decoration: none;">Locations</a>
+            <a href="about.html" style="color: white; padding: 14px 16px; text-decoration: none;">About Us</a>
+        </div>
+    </nav>
     <header>
         <h1>Alani Mediterranean Cuisine</h2>
     </header>
-    <div class="container">
-        <h2>Coming Soon</h1>
-        <p>Our new website is currently under development. Stay tuned!</p>
-        <div class="social-links">
-            <!-- Add your social media links here -->
-            <a href="https://alanifoodcart.square.site/">Order</a>
-            <a href="https://www.instagram.com/alanifoodcart/?hl=en">Instagram</a>
-            <a href="https://www.doordash.com/store/alani-food-cart-oregon-city-1715688/">DoorDash</a>
-            <a href="https://www.ubereats.com/store/alani-food-cart/Kr_BjcnRTOSRFGrarEslyQ">Uber Eats</a>
-            <a href="https://www.grubhub.com/restaurant/alani-food-cart-1401--washington-st-oregon-city/2894662">Grubhub</a>
-        </div>
+    <div class="social-links">
+        <!-- Add your social media links here -->
+        <a href="https://www.instagram.com/alanifoodcart/?hl=en">Instagram</a>
+        <a href="https://www.doordash.com/store/alani-food-cart-oregon-city-1715688/">DoorDash</a>
+        <a href="https://www.ubereats.com/store/alani-food-cart/Kr_BjcnRTOSRFGrarEslyQ">Uber Eats</a>
+        <a href="https://www.grubhub.com/restaurant/alani-food-cart-1401--washington-st-oregon-city/2894662">Grubhub</a>
+    </div>
+    <!-- Button to Open the Modal -->
+    <button id="myBtn">Watch Our Story</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe src="https://player.vimeo.com/video/868587849" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
     </div>
     <footer>
         © <span id="current-year"></span> Alani Mediterranean Cuisine
