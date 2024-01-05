@@ -1,0 +1,42 @@
+/* Desktop view */
+.order-button-desktop {
+    display: none; /* Hidden by default, shown in desktop view */
+}
+
+/* Mobile view */
+.order-button-mobile {
+    display: inline-block; /* Shown by default, hidden in desktop view */
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    padding: 10px 15px; /* Increase top and bottom padding */
+    font-size: 1.1rem; /* Increase font size if needed */
+}
+
+/* Adjust the size of the navbar brand/logo */
+.navbar-brand img {
+    height: 60px; /* Adjust the height of your logo */
+}
+
+/* Adjust the navbar link padding for larger navbar */
+.navbar-nav .nav-item .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.responsive-map {
+    width: 100%;
+    height: 400px; /* Default height */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .order-button-desktop {
+        display: inline-block; /* Show in desktop view */
+    }
+    .order-button-mobile {
+        display: none; /* Hide in desktop view */
+    }
+}
