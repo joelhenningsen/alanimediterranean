@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alani Mediterranean</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="bootstrap.bundle.min.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-togglable fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/horizontal-logo.png" alt="Alani Mediterranean Logo" height="40">
+                </a>
+                
+                <!-- Order Button for Mobile View -->
+                <a class="btn btn-danger order-button-mobile" href="https://order.online/business/alani-food-cart-799109" role="button">Order</a>
+        
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#locations">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Order Button for Desktop View -->
+                <a class="btn btn-danger order-button-desktop" href="https://order.online/business/alani-food-cart-799109" role="button">Order</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="header-image-container" style="position: relative;"></div>
+            <img src="assets/img/AdobeStock_528588321.jpeg" alt="Main Image" class="img-fluid w-100">
+            <div class="overlay"></div> <!-- Overlay element -->
+            
+            <div class="header-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                <!-- Preheading -->
+                <h6 class="text-xs">
+                  <span class="text-primary">Café</span> / Restaurant
+                </h6>
+      
+                <!-- Heading -->
+                <h1 class="display-1 mb-4">
+                  Alani Mediterannean
+                </h1>
+      
+                <!-- Subheading -->
+                <p class="text-white-75 mb-7">
+                  A Mediterranean Food Cart serving Halal family recipes. Owned by first generation Arab-Americans.
+                </p>
+      
+                <!-- Button -->
+                <a class="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" href="https://order.online/business/alani-food-cart-799109">
+                  ORDER NOW
+                </a>
+            </div>
+        </div>
+        </section>
+        
+        <!-- Locations Section -->
+        <section id="locations" class="container py-4">
+            <h2 class="text-center mb-4">Locations</h2>
+            
+            <div class="row">
+                <!-- Google Maps Embed 1 -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.355396086081!2d-122.60274972373156!3d45.36182297107244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ba92ebb0003%3A0xd765152a50509a02!2sAlani%20Food%20Cart!5e0!3m2!1sen!2sus!4v1704487600923!5m2!1sen!2sus" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <!-- Google Maps Embed 2 -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.206147183692!2d-122.69715352379727!3d45.26384347107141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495657920e84e49%3A0xe412ad56b3e307ba!2s292%20N%20Holly%20St%2C%20Canby%2C%20OR%2097013!5e0!3m2!1sen!2sus!4v1704501948810!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <form>
+                <!-- Contact form elements go here -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Your Food Cart</h5>
+              <p>Here you can add a description or mission statement about your food cart.</p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Contact Info</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Link 3</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Opening Hours</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark">Monday-Sunday</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">11:00AM - 8:00PM</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © <span id="current-year"></span> Alani Mediterannean Cuisine
+        </footer>  
+        
+        </div>
+
+      </footer>
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
