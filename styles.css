@@ -25,11 +25,59 @@
     padding-bottom: 10px;
 }
 
+.maps-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between iframes */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
 .responsive-map {
-    width: 100%;
+    width: 48%; /* Adjust width for side-by-side view, accounting for some margin */
     height: 400px; /* Default height */
 }
 
+
+#home {
+    position: relative;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+    overflow: hidden; /* Prevents scrollbars if image is larger than viewport */
+}
+
+#home img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div without being stretched */
+    object-position: center; /* Adjust this if you need to focus on a specific part of the image */
+}
+
+#home .text-button-container {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the container */
+    z-index: 10; /* Ensure it's above the image */
+}
+
+.header-image-container {
+    position: relative;
+}
+
+.header-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 0, 0.5); /* Olive color with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the image, but below the text */
+}
+
+/* Ensure other elements inside header-image-container are positioned above the overlay */
+.header-image-container > *:not(.overlay) {
+    position: relative;
+    z-index: 2;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -38,5 +86,8 @@
     }
     .order-button-mobile {
         display: none; /* Hide in desktop view */
+    }
+    .responsive-map {
+        width: 100%; /* Full width for mobile view */
     }
 }
