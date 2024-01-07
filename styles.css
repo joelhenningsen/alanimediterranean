@@ -65,21 +65,22 @@
     position: relative;
 }
 
-.header-image-container .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(128, 128, 0, 0.5); /* Olive color with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
     z-index: 1; /* Ensures the overlay is above the image, but below the text */
 }
 
-/* Ensure other elements inside header-image-container are positioned above the overlay */
-.header-image-container > *:not(.overlay) {
-    position: relative;
-    z-index: 2;
+.header-text {
+    position: absolute;
+    /* ... other styling ... */
+    z-index: 2; /* Higher than the overlay */
 }
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
