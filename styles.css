@@ -32,9 +32,11 @@
 }
 
 .responsive-map {
-    width: 48%; /* Adjust width for side-by-side view, accounting for some margin */
-    height: 400px; /* Default height */
+    width: 100%; /* Full width for all views */
+    height: 450px; /* Adjust height as needed */
+    border: 0;
 }
+
 
 
 #home {
