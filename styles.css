@@ -81,6 +81,9 @@
     z-index: 2; /* Higher than the overlay */
 }
 
+section {
+    scroll-margin-top: 80px; /* Adjust this value based on your navbar's height */
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
