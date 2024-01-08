@@ -1,11 +1,11 @@
 /* Desktop view */
 .order-button-desktop {
-    display: none; /* Hidden by default, shown in desktop view */
+    display: none; /* Hidden by default, will be shown in larger screens */
 }
 
 /* Mobile view */
 .order-button-mobile {
-    display: inline-block; /* Shown by default, hidden in desktop view */
+    display: inline-block; /* Shown by default, will be hidden in larger screens */
 }
 
 /* Custom Navbar Styling */
@@ -86,14 +86,24 @@ section {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .order-button-desktop {
-        display: inline-block; /* Show in desktop view */
+        display: none; /* Keep hidden for tablets */
     }
     .order-button-mobile {
-        display: none; /* Hide in desktop view */
+        display: inline-block; /* Show for tablets */
     }
     .responsive-map {
-        width: 100%; /* Full width for mobile view */
+        width: 100%; /* Full width for mobile and tablet view */
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .order-button-desktop {
+        display: inline-block; /* Show for desktops and larger screens */
+    }
+    .order-button-mobile {
+        display: none; /* Hide for desktops and larger screens */
     }
 }
