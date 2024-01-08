@@ -42,12 +42,12 @@
 #home {
     position: relative;
     height: 100vh; /* 100% of the viewport height */
-    width: 100vw; /* 100% of the viewport width */
+    width: 100%; /* 100% of the viewport width */
     overflow: hidden; /* Prevents scrollbars if image is larger than viewport */
 }
 
 #home img {
-    width: 100%; 
+    max-width: 100%; 
     height: 100%;
     object-fit: cover; /* Ensures the image covers the div without being stretched */
     object-position: center; /* Adjust this if you need to focus on a specific part of the image */
