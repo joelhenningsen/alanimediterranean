@@ -1,5 +1,7 @@
+// Gets year for copyright
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
+// Collapses navigation bar after selection
 document.addEventListener('DOMContentLoaded', function () {
     var navbarCollapse = document.getElementById('navbarNav');
     navbarCollapse.addEventListener('click', function(event) {
