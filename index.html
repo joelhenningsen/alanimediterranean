@@ -66,11 +66,11 @@
     <main>
         <!-- Home Section -->
         <section id="home">
-            <div class="header-image-container" style="position: relative;"></div>
-            <div class="overlay"></div> <!-- Overlay element -->
+            <!-- Overlay element over main image -->
+            <div class="overlay"></div>
             <img src="assets/img/main.jpeg" alt="Main Image" class="img-fluid w-100">
             
-            <div class="header-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+            <div class="header-text">
                 <!-- Preheading -->
                 <!-- <h6 class="text-xs">
                   <span class="text-primary">Café</span> / Restaurant
@@ -121,7 +121,7 @@
                 
                 <!-- Google Maps Embed Canby -->
                 <div class="col-12 col-lg-6 mb-4">
-                    <h3>Canby (COMING SUMMER 2024)</h3>
+                    <h3>Canby (Coming Summer 2024)</h3>
                     <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.206147183692!2d-122.69715352379727!3d45.26384347107141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495657920e84e49%3A0xe412ad56b3e307ba!2s292%20N%20Holly%20St%2C%20Canby%2C%20OR%2097013!5e0!3m2!1sen!2sus!4v1704501948810!5m2!1sen!2sus"
                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <p class="mt-3">
@@ -146,14 +146,12 @@
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start">
-        
-      
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            &#169; <span id="current-year"></span> Alani Mediterannean Cuisine 
+        <div class="text-center p-3 footer-background">
+            &#169; <span id="current-year"></span> Alani Mediterannean Cuisine
         </div>
-
     </footer>
+
     <script src="main.js"></script>
     
 </body>
