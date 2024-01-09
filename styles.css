@@ -86,20 +86,10 @@ section {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .order-button-desktop {
-        display: none; /* Keep hidden for tablets */
-    }
-    .order-button-mobile {
-        display: inline-block; /* Show for tablets */
-    }
-    .responsive-map {
-        width: 100%; /* Full width for mobile and tablet view */
-    }
-}
+
 
 /* Large devices (desktops, 1024px and up) */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     .order-button-desktop {
         display: inline-block; /* Show for desktops and larger screens */
     }
