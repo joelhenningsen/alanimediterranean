@@ -86,8 +86,10 @@ section {
 }
 
 .footer-background {
-    background-color: rgba(179, 174, 85); /* Olive color with 50% transparency */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
+
 
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 992px) {
