@@ -90,7 +90,35 @@ section {
     color: #fff; /* White text */
 }
 
+#about, #reviews {
+    background-color: #f9f9f9;
+}
 
+#about p, #reviews blockquote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#reviews blockquote {
+    font-style: italic;
+    border-left: 5px solid #ff4500;
+    padding-left: 15px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds a slight roundness to the corners of the image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to the image */
+}
+
+/* Red line for testing */
+/* * {
+    border: 1px solid red;
+} */
+    
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 992px) {
     .order-button-desktop {
@@ -98,5 +126,12 @@ section {
     }
     .order-button-mobile {
         display: none; /* Hide for desktops and larger screens */
+    }
+}
+
+/* Styles for screens less than 768px wide */
+@media (max-width: 767px) {
+    .responsive-map {
+        height: 250px; /* Reduced height for smaller screens */
     }
 }
