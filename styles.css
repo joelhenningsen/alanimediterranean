@@ -37,8 +37,6 @@
     border: 0;
 }
 
-
-
 #home {
     position: relative;
     height: 100vh; /* 100% of the viewport height */
@@ -50,13 +48,13 @@
     max-width: 100%; 
     height: 100%;
     object-fit: cover; /* Ensures the image covers the div without being stretched */
-    object-position: center; /* Adjust this if you need to focus on a specific part of the image */
+    object-position: center; /* Can adjust to different parts of image */
 }
 
 #home .text-button-container {
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
     z-index: 10; /* Ensure it's above the image */
 }
@@ -78,11 +76,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 2; /* If you need it to be above certain elements */
+    z-index: 2; /* Makes text above certain elements */
 }
 
 section {
-    scroll-margin-top: 80px; /* Adjust this value based on your navbar's height */
+    scroll-margin-top: 80px; /* Navbar's height */
 }
 
 .footer-background {
@@ -111,8 +109,13 @@ section {
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Adds a slight roundness to the corners of the image */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to the image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow to the image */
 }
+
+.nav-link.active {
+    font-weight: bold;
+}
+
 
 /* Red line for testing */
 /* * {
