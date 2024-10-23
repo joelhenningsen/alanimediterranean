@@ -84,7 +84,7 @@ section {
 }
 
 .footer-background {
-    background-color: #000; /* Black background */
+    background-color: #878063; /* Black background */
     color: #fff; /* White text */
 }
 
@@ -101,7 +101,7 @@ section {
 
 #reviews blockquote {
     font-style: italic;
-    border-left: 5px solid #ff4500;
+    border-left: 5px solid #878063;
     padding-left: 15px;
 }
 
@@ -115,6 +115,19 @@ section {
 .nav-link.active {
     font-weight: bold;
 }
+
+.order-btn {
+    background-color: #bc9d6e;
+    /* background-color: #878063; */
+    color: white;
+    /* border: 2px solid #yourBorderColor; */
+}
+  
+.order-btn:hover {
+    background-color: #b79664;
+    color: white;
+}
+  
 
 
 /* Red line for testing */
